@@ -1,0 +1,32 @@
+{
+  "name": "infinite-scroll",
+  "version": "1.0.0",
+  "description": "infinite scroll  ",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/saiteja8906/infinite-scroll.git"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-scripts": "5.0.1"
+  },
+  "keywords": [
+    "infinite",
+    "scroll",
+    "react",
+    "infinite",
+    "sroll",
+    "infinite",
+    "scrolling"
+  ],
+  "author": "Saiteja Vemula",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/saiteja8906/infinite-scroll/issues"
+  },
+  "homepage": "https://github.com/saiteja8906/infinite-scroll#readme"
+}
