@@ -5,13 +5,12 @@ export default function useInfiniteScroll(
   setCurrentPage,
   hasMore = false,
   callBackAPI,
-  isLoading = false
+  results = []
 ) {
   const observer = useRef();
 
   const lastElementRef = useCallback(
     (node) => {
-      if (isLoading) return;
       if (observer?.current) observer?.current?.disconnect();
       observer.current = new IntersectionObserver((entries) => {
         if (entries?.[0]?.isIntersecting && hasMore) {
@@ -21,7 +20,7 @@ export default function useInfiniteScroll(
       if (node) observer?.current?.observe(node);
     },
     // eslint-disable-next-line react-hooks/exhaustive-deps
-    [isLoading, hasMore]
+    [results, hasMore]
   );
 
   useEffect(() => {
