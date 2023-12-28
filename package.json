@@ -1,6 +1,6 @@
 {
-  "name": "infinite-scroll",
-  "version": "1.0.0",
+  "name": "infinite-scrolling-js",
+  "version": "1.0.1",
   "description": "infinite scroll  ",
   "main": "index.js",
   "scripts": {
