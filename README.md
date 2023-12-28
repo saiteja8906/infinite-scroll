@@ -17,6 +17,24 @@ Infinite Scroll operates within a designated container element, requiring the ad
 
 ``` HTML
 
+const apiCall = () => {
+    axios({
+      method: "",
+      url: "",
+      params: {},
+    })
+      .then((res) => {
+        setrecords((prevrecords) => {
+          return [
+            ...new Set([...prevrecords, ...res.data.docs.map((b) => b.title)]),
+          ];
+        });
+        // hasMore: Indicates whether there are more total values than the current offset records. If this is set to false, even when reaching the last element,             the callbackAPI will not be triggered.
+        setHasMore(res.data.totalDocs > res.data.docs.length);
+      })
+      .catch((error) => {});
+  };
+
 const { lastElementRef } = useInfiniteScroll(
     pageNumber,
     setPageNumber,
