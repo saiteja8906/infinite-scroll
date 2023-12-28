@@ -1,7 +1,6 @@
-# Infinite Scroll: Seamless Content Loading
+# Infinite Scroll: Seamless Content Loading using React JS
 
 _Automatically calls next Offset values when we scroll_
-
 
 ## Install
 npm i infinite-scrolling-js
@@ -63,6 +62,12 @@ records: A state variable representing the current offset records, managed by us
 })}
 
 ```
+
+## Development
+
+Leveraging a React callback with dependencies on both the result and hasMore, this approach ensures seamless operation with minimal renders. Additionally, a React useEffect is employed to invoke the callback API when the current page is updated.
+
+
 ## Browser support
 Google Chrome: Version 51 and later
 Mozilla Firefox: Version 55 and later
