@@ -13,17 +13,23 @@ MIT
 
 ## Usage
 
-Infinite Scroll works on a container element , we need to add a useRef hook to the last element so when this element appears it will trigger a callback function if the next offset values are present
+Infinite Scroll operates within a designated container element, requiring the addition of a useRef hook to the last element. This useRef hook facilitates the detection of the last element's appearance on the browser viewport, triggering a callback function when the next offset values are present.
 
 ``` HTML
 
 const { lastElementRef } = useInfiniteScroll(
-    pageNumber,  // current page number which is a useState variable
-    setPageNumber, // set current page number 
-    hasMore, // boolean value which will be true when there is next offset available
-    apiCall, // function to be triggered when scroll to the end 
-    records // current offset records which is a useState variable 
+    pageNumber,
+    setPageNumber,
+    hasMore,
+    apiCall,
+    records 
   );
+
+pageNumber: A state variable representing the current page number, managed by useState.
+setPageNumber: A function to set the current page number.
+hasMore: A boolean value indicating whether there is a next offset available.
+apiCall: A function triggered when scrolling reaches the end of the content.
+records: A state variable representing the current offset records, managed by useState
 
 {records.map((record, index) => {
         if (records.length === index + 1) {
@@ -37,16 +43,5 @@ const { lastElementRef } = useInfiniteScroll(
           return <div key={record}>{record}</div>;
         }
 })}
-
-```
-
-### Options
-
-``` js
-currentPage,
-setCurrentPage,
-hasMore = false,
-callBackAPI,
-isLoading = false
 
 ```
