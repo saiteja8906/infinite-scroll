@@ -1,6 +1,6 @@
 {
   "name": "infinite-scrolling-js",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "infinite scroll  ",
   "main": "index.js",
   "scripts": {
@@ -15,13 +15,25 @@
     "react-scripts": "5.0.1"
   },
   "keywords": [
-    "infinite",
-    "scroll",
-    "react",
-    "infinite",
-    "sroll",
-    "infinite",
-    "scrolling"
+    "infinite scroll",
+    "react infinite scroll",
+    "react automatic scroll",
+    "infinite scrolling",
+    "react-infinite-scroll",
+    "infinite-scrolling",
+    "react-scroll-pagination",
+    "virtual-scrolling",
+    "react-pagination",
+    "scroll-trigger",
+    "continuous-scroll",
+    "react-lazy-load",
+    "lazy-scroll",
+    "dynamic-scroll",
+    "endless-scroll",
+    "react-scroll-loader",
+    "paginated-scroll",
+    "react-scroll-handler",
+    "react-infinite-loader"
   ],
   "author": "Saiteja Vemula",
   "license": "MIT",
