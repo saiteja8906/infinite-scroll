@@ -45,3 +45,8 @@ records: A state variable representing the current offset records, managed by us
 })}
 
 ```
+## Browser support
+Google Chrome: Version 51 and later
+Mozilla Firefox: Version 55 and later
+Microsoft Edge: Version 15 and later
+Safari: Version 12.1 and later (though it has partial support in earlier versions)
